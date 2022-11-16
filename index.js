@@ -47,7 +47,10 @@ function userInput(){
 ])};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.appendFile(`${fileName}.md`, data,
+    (err) => err ? console.error(err) : console.log(`Generation of ${fileName}.md Readme complete!`))
+}
 
 // TODO: Create a function to initialize app
 async function init() {

@@ -123,7 +123,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.testing}
 
-  ## Contact Me:
+  ## Contact Options:
   [${data.username}](https://github.com/${data.username})  
   ${data.email}`;
 }
