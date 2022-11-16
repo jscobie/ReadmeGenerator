@@ -2,6 +2,8 @@
 # Posted to Slack channel for class by TA Vince Shury
 
 Provided_files/
+.DS_Store/
+node_modules/
 
 # Logs
 logs
@@ -44,7 +46,6 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)

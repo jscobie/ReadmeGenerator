@@ -4,7 +4,7 @@
 
   ## Description
   This application was built to showcase my skills using Node.JS and its related items to build a working Readme Generator that outputs professional quality Readme files. In fact the start of this Readme you are reading now was built using this Readme Generator!
-  [Link to Video Example]
+  [Link to Video Example](https://drive.google.com/file/d/1mm2BLCroq4YO4uXQIqrCxWPe33__eRB3/view)
   [Module 09 Readme Generator Deployed Site](https://jscobie.github.io/ReadmeGenerator/)
   [Module 09 Readme Generator Github Repository](https://github.com/jscobie/ReadmeGenerator)
 
@@ -30,10 +30,10 @@
   ```
 
   ## Credits
-  I used the following documentation: 
-  Node.Js (https://nodejs.org/en/)
-  npm (https://www.npmjs.com/)
-  Inquirer (https://www.npmjs.com/package/inquirer)
+  I used the following documentation:<br> 
+  [Node.Js](https://nodejs.org/en/)<br>
+  [npm](https://www.npmjs.com/)<br>
+  [Inquirer](https://www.npmjs.com/package/inquirer)
 
   ## License
   Read more about MIT here: 
