@@ -103,7 +103,6 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  // add this
   ## Credits
   ${data.credits}
 
