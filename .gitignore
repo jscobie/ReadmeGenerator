@@ -1,6 +1,8 @@
 # Credit for .gitignore file used: https://github.com/github/gitignore/blob/main/Node.gitignore
 # Posted to Slack channel for class by TA Vince Shury
 
+Provided_files/
+
 # Logs
 logs
 *.log

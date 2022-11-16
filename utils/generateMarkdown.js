@@ -16,10 +16,16 @@ function renderLicenseBadge(license) {
       return (
         "[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)"
       );
+      break;
+    case "Do What The Fuck You Want To Public License":
+      return (
+        "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)"
+      )
     case "MIT":
       return (
         "[![License: CC0-1.0](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)"
       );
+      break;
     default:
       return "";
       break;
@@ -38,8 +44,13 @@ function renderLicenseLink(license) {
       break;
     case "Creative Commons":
       return ("(http://creativecommons.org/publicdomain/zero/1.0/)");
+      break;
+    case "Do What The Fuck You Want To Public License":
+      return ("(http://www.wtfpl.net/about/)");
+      break;
     case "MIT":
       return ("(https://opensource.org/licenses/MIT)");
+      break;
     default:
       return "";
       break;
@@ -74,43 +85,47 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
-    ## Description
-    ${data.description}
-    
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Licenses](#license)
-    - [Contributors](#contributors)
-    - [Tests](#tests)
-    - [URL Directory](#url-directory)
+  ## Description
+  ${data.description}
 
-    ## Installation
-    ${data.installation}
+  ## Table of Contents
+  * [License](#license)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [How to Contribute](#how-to-contribute)
+  * [Tests](#tests)
+  * [Questions?](#questions)
 
-    ## Usage
-    ${data.usage}
+  ## Installation
+  ${data.install}
 
-    ## License
-    ${renderLicenseSection(data.license)}
-    ${renderLicenseLink(data.license)}
-    ${data.license}
+  ## Usage
+  ${data.usage}
 
-    ## Contributors
-    ${data.contributors}
-    
-    ## Tests
-    ${data.tests}
-    
-    ## URL Directory 
-    ${data.URLs}
-    
-    ## GitHub URL
-    ${data.github}
-    
-    ## LinkedIn URL
-    ${data.linkedin}
-`;
+  // add this
+  ## Credits
+  ${data.credits}
+
+  ## License
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
+
+  ## Badges
+  ${renderLicenseBadge(data.license)}
+
+  ## Features
+  ${data.features}
+
+  ## How to Contribute
+  ${data.contributing}
+
+  ## Tests
+  ${data.testing}
+
+  ## Contact Me:
+  [${data.username}](https://github.com/${data.username})  
+  ${data.email}`;
 }
 
 module.exports = generateMarkdown;
